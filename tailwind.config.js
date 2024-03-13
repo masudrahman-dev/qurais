@@ -20,7 +20,7 @@ export default {
         ...blackA,
         ...violet,
       },
-      space: {
+      spacing: {
         base: "1rem",
       },
       fontSize: {
