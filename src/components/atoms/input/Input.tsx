@@ -5,15 +5,30 @@ interface InputProps {
   fieldProps?: string;
   className?: string;
   type?: "text" | "email" | "password" | "tel";
+  id?: string;
+  placeholder?: string;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type = "text", ...fieldProps }, ref) => {
-    console.log("fieldProps :>> ", fieldProps);
+  (
+    {
+      className,
+      type = "text",
+      placeholder = "placeholder",
+      id,
+      ...fieldProps
+    },
+    ref
+  ) => {
     return (
       <input
-        className={clx(" border ", className)}
+        className={clx(
+          " border focus:outline-none placeholder:text-base w-full  rounded font-normal px-4 py-3",
+          className
+        )}
         type={type}
+        placeholder={placeholder}
+        id={id}
         {...fieldProps}
         ref={ref}
       />
