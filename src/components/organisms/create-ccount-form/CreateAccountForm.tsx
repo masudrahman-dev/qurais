@@ -9,8 +9,11 @@ const CreateAccountForm = () => {
     <div className="bg-white">
       <div className="max-w-[608px] mx-auto pt-[85px]">
         <form className="p-6">
-          <FormHeader />
-
+          <FormHeader
+            title="Explore your options"
+            text="  Get advice and offers tailored to your unique needs, and manage your
+        mortgage application in one place."
+          />
           <div className="space-y-base">
             <div>
               <label className="block " htmlFor="email">

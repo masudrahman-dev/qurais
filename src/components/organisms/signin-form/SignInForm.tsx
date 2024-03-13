@@ -67,7 +67,11 @@ const SignInForm = () => {
     <div className="bg-white">
       <div className="max-w-[608px] mx-auto pt-[85px]">
         <form>
-          <FormHeader />
+          <FormHeader
+            title="Welcome Back!"
+            text="  Get advice and offers tailored to your unique needs, and manage your
+        mortgage application in one place."
+          />
 
           <TabsDemo />
         </form>
