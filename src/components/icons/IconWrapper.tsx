@@ -11,8 +11,8 @@ const IconWrapper = ({
   return (
     <span
       className={clx(
-        "flex h-12 w-12 items-center justify-center rounded-full bg-white  bg-opacity-10",
-        iconWrapperStyle,
+        "flex  items-center justify-center rounded-full w-[60px] p-[17.5px] h-[60px] bg-black",
+        iconWrapperStyle
       )}
     >
       {children}

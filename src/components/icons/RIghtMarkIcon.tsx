@@ -9,7 +9,7 @@ const RightMarkIcon = ({
   iconWrapperStyle?: string;
 }) => {
   return (
-    <IconWrapper iconWrapperStyle={iconWrapperStyle}>
+    <>
       <svg
         width="18"
         height="20"
@@ -23,12 +23,8 @@ const RightMarkIcon = ({
           fill="#212121"
         />
       </svg>
-    </IconWrapper>
+    </>
   );
 };
 
 export default RightMarkIcon;
-
-
-
-

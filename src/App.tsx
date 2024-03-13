@@ -1,7 +1,10 @@
 import React from "react";
+import CreateAccount from "./components/templates/create-account/CreateAccount";
 
 const App = () => {
-  return <div>aaa</div>;
+  return <div>
+    <CreateAccount/>
+  </div>;
 };
 
 export default App;
