@@ -4,6 +4,7 @@ import App from "../App";
 import CreateAccount from "../components/templates/create-account/CreateAccount";
 import CreateAccountForm from "../components/organisms/create-ccount-form/CreateAccountForm";
 import SignInForm from "../components/organisms/signin-form/SignInForm";
+import VerifyForm from "../components/organisms/verify-form/VerifyForm";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
             element: <SignInForm />,
           },
         ],
+      },
+
+      {
+        path: "account/verify",
+        element: <VerifyForm />,
       },
     ],
   },

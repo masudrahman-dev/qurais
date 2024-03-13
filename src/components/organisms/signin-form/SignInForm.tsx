@@ -43,6 +43,7 @@ const TabsDemo = () => (
       <fieldset>
         <div>
           <label className="block  " htmlFor="username">
+            {/* FIXME: change input field */}
             <p className="pb-2 text-base">Phone Number</p>
             <Input type={"tel"} placeholder="Phone Number" />
           </label>

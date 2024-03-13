@@ -4,7 +4,7 @@ import clx from "../../../utils/clx";
 interface InputProps {
   fieldProps?: string;
   className?: string;
-  type?: "text" | "email" | "password" | "tel";
+  type?: "text" | "email" | "password" | "tel" | "number";
   id?: string;
   placeholder?: string;
 }

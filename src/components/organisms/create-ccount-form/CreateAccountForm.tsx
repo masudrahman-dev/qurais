@@ -22,6 +22,8 @@ const CreateAccountForm = () => {
             <div>
               <label className="block  " htmlFor="username">
                 <p className="pb-2 text-base">Phone Number</p>
+                {/* FIXME: change input field */}
+
                 <Input type={"tel"} placeholder="Phone Number" />
               </label>
             </div>

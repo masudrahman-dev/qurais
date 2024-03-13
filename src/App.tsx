@@ -8,6 +8,7 @@ const App = () => {
       <nav className="absolute z-50 space-x-6">
         <a href="/account/register">create account</a>
         <a href="/account/signin">Sign in</a>
+        <a href="/account/verify">verify sign in</a>
       </nav>
       <Outlet />
     </div>
