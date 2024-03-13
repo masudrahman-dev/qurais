@@ -3,6 +3,7 @@ import Button from "../../atoms/button/Button";
 import Checkbox from "../../atoms/checkbox/Checkbox";
 import Input from "../../atoms/input/Input";
 import FormHeader from "../../molecules/form-header/FormHeader";
+import PhoneInput from "react-phone-input-2";
 
 const CreateAccountForm = () => {
   return (
@@ -27,7 +28,17 @@ const CreateAccountForm = () => {
                 <p className="pb-2 text-base">Phone Number</p>
                 {/* FIXME: change input field */}
 
-                <Input type={"tel"} placeholder="Phone Number" />
+                <PhoneInput
+                  country={"bd"}
+                  value={"8801704445245"}
+                  containerClass=" flex !bg-white items-center h-14 border focus:outline-none !placeholder:text-base w-full  rounded "
+                  inputClass=" !w-full !border-none !border"
+                  buttonClass=" !border-none !bg-white "
+                  dropdownClass="!border-none !bg-white !hover:bg-white    "
+                  onChange={(phone) => {
+                    // console.log("phone :>> ", phone);
+                  }}
+                />
               </label>
             </div>
 
