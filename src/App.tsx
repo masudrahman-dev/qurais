@@ -1,11 +1,15 @@
 import React from "react";
 import CreateAccount from "./components/templates/create-account/CreateAccount";
-import Checkbox from "./components/atoms/checkbox/Checkbox";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <CreateAccount />
+      <nav className="absolute z-50 space-x-6">
+        <a href="/account/register">create account</a>
+        <a href="/account/signin">Sign in</a>
+      </nav>
+      <Outlet />
     </div>
   );
 };

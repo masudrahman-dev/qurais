@@ -6,6 +6,7 @@ import { CheckIcon } from "@radix-ui/react-icons";
 export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
   label?: ReactNode;
   isChecked?: boolean;
+
 };
 
 const Checkbox = React.forwardRef(
