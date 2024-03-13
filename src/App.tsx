@@ -1,14 +1,14 @@
 import React from "react";
 import CreateAccount from "./components/templates/create-account/CreateAccount";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
       <nav className="absolute z-50 space-x-6">
-        <a href="/account/register">create account</a>
-        <a href="/account/signin">Sign in</a>
-        <a href="/account/verify">verify sign in</a>
+        <Link to="/account/register">create account</Link>
+        <Link to="/account/signin">Sign in</Link>
+        <Link to="/account/verify">verify sign in</Link>
       </nav>
       <Outlet />
     </div>

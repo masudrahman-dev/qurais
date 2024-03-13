@@ -27,7 +27,7 @@ const TabsDemo = () => {
         </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content
-        className="grow mt-6 bg-white rounded-b-md outline-none "
+        className="grow mt-6  rounded-b-md outline-none "
         value="tab1"
       >
         <fieldset>
@@ -77,8 +77,8 @@ const TabsDemo = () => {
 
 const SignInForm = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-[608px] mx-auto pt-[85px]">
+    <div className="">
+      <div className="max-w-[608px] ms-[120px] pt-[85px]">
         <form>
           <FormHeader
             title="Welcome Back!"

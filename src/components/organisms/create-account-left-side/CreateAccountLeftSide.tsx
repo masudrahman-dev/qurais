@@ -6,7 +6,7 @@ import ChatIcon from "../../icons/ChatIcon";
 const CreateAccountLeftSide = () => {
   return (
     <div className="bg-primary   h-screen">
-      <div className=" max-w-[624px] mx-auto pt-[85px] ">
+      <div className=" max-w-[624px]  ms-auto mr-[120px] pt-[85px] ">
         <Logo />
         <h1 className="text-heading py-12">
           Dream Home with Hassle-Free Mortgage
@@ -43,7 +43,7 @@ const CreateAccountLeftSide = () => {
         </div>
 
         <div className="mt-[98.89px]">
-          <ChatIcon  />
+          <ChatIcon />
         </div>
       </div>
     </div>

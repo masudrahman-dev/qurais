@@ -7,8 +7,8 @@ import PhoneInput from "react-phone-input-2";
 
 const CreateAccountForm = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-[608px] mx-auto pt-[85px]">
+    <div className="">
+      <div className="max-w-[608px]   ms-[120px] ">
         <form className="p-6">
           <FormHeader
             title="Explore your options"
