@@ -9,7 +9,6 @@ import Step3 from "./steps/step3/Step3";
 import Step4 from "./steps/step4/Step4";
 import { useOnboardingProvider } from "../../../hooks/use-onboarding-provider/useOnboardingProvider";
 import Stepper from "./stepper/Stepper";
-import clx from "../../../utils/clx";
 
 import OnboardingStepImage from "./onboarding-step-image/OnboardingStepImage";
 
@@ -24,25 +23,25 @@ const Onboarding = () => {
           className={` flex justify-center border h-screen flex-col items-center `}
         >
           <div className={`   relative `}>
-            <div className="w-[540px] rounded-t-full h-[721px] bg-secondary-200 rotate-[15deg]  "></div>
+            <div className="w-[540px] rounded-t-full h-[721px] bg-secondary-200 rotate-[15deg] "></div>
             {current === 1 && (
               <OnboardingStepImage
-                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step1.jpeg')] `}
+                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step1.jpeg')] bg-left-top`}
               />
             )}
             {current === 2 && (
               <OnboardingStepImage
-                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step2.jpeg')] `}
+                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step2.jpeg')] bg-center`}
               />
             )}
             {current === 3 && (
               <OnboardingStepImage
-                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step3.jpeg')] `}
+                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step3.jpeg')] bg-center`}
               />
             )}
             {current === 4 && (
               <OnboardingStepImage
-                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step4.jpeg')] `}
+                className={`bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/step4.jpeg')] bg-center `}
               />
             )}
           </div>
