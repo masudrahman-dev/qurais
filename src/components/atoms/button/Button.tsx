@@ -14,7 +14,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         className={clx(
-          "hover:scale-105 block transition-transform duration-200 p-base w-full rounded-lg bg-black text-white text-[18px] font-semibold  ",
+          " block transition-transform duration-200 p-base w-full rounded-lg bg-black text-white text-[18px] font-semibold  ",
           className
         )}
       >

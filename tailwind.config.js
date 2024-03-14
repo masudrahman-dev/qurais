@@ -57,6 +57,13 @@ export default {
             fontWeight: "600",
           },
         ],
+        subtitle: [
+          "1.875rem",
+          {
+            lineHeight: "2.75rem",
+            fontWeight: "600",
+          },
+        ],
       },
     },
   },
