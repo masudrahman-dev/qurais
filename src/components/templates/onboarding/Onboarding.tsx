@@ -11,6 +11,7 @@ import { useOnboardingProvider } from "../../../hooks/use-onboarding-provider/us
 import Stepper from "./stepper/Stepper";
 
 import OnboardingStepImage from "./onboarding-step-image/OnboardingStepImage";
+import clx from "../../../utils/clx";
 
 const Onboarding = () => {
   const { context } = useOnboardingProvider();
@@ -20,7 +21,20 @@ const Onboarding = () => {
       <div className="w-1/4 h-4 bg-secondary-200 absolute top-0    "></div>
       <div className="grid grid-cols-2  ">
         <div
-          className={` flex justify-center border h-screen flex-col items-center `}
+          // bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-1.svg')]
+          className={clx(
+            `flex justify-center border h-screen flex-col items-center bg-no-repeat bg-center`,
+            {
+              "bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-1.svg')]":
+                current === 1,
+              "bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-2.svg')]":
+                current === 2,
+              "bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-3.svg')]":
+                current === 3,
+              "bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-4.svg')]":
+                current === 4,
+            }
+          )}
         >
           <div className={`   relative `}>
             <div className="w-[540px] rounded-t-full h-[721px] bg-secondary-200 rotate-[15deg] "></div>

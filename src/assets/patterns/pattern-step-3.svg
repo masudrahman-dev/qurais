@@ -1,0 +1,61 @@
+<svg width="789" height="799" viewBox="0 0 789 799" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_16283" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-11" y="0" width="800" height="799">
+<rect width="799" height="799" transform="translate(-10.5)" fill="url(#paint0_radial_1_16283)"/>
+</mask>
+<g mask="url(#mask0_1_16283)">
+<g clip-path="url(#clip0_1_16283)">
+<g clip-path="url(#clip1_1_16283)">
+<line x1="39.9577" x2="39.9577" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="89.8952" x2="89.8952" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="139.833" x2="139.833" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="189.77" x2="189.77" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="239.708" x2="239.708" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="289.645" x2="289.645" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="339.583" x2="339.583" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="389.52" x2="389.52" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="439.458" x2="439.458" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="489.395" x2="489.395" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="539.333" x2="539.333" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="589.27" x2="589.27" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="639.208" x2="639.208" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="689.145" x2="689.145" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="739.083" x2="739.083" y2="799" stroke="#BFBFBF" stroke-width="1.04036"/>
+</g>
+<rect x="-9.97982" y="0.520182" width="797.96" height="797.96" stroke="#BFBFBF" stroke-width="1.04036"/>
+<g clip-path="url(#clip2_1_16283)">
+<line x1="-10.5" y1="49.4173" x2="788.5" y2="49.4173" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="99.3548" x2="788.5" y2="99.3548" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="149.292" x2="788.5" y2="149.292" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="199.23" x2="788.5" y2="199.23" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="249.167" x2="788.5" y2="249.167" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="299.105" x2="788.5" y2="299.105" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="349.042" x2="788.5" y2="349.042" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="398.98" x2="788.5" y2="398.98" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="448.917" x2="788.5" y2="448.917" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="498.855" x2="788.5" y2="498.855" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="548.792" x2="788.5" y2="548.792" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="598.73" x2="788.5" y2="598.73" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="648.667" x2="788.5" y2="648.667" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="698.605" x2="788.5" y2="698.605" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="748.542" x2="788.5" y2="748.542" stroke="#BFBFBF" stroke-width="1.04036"/>
+<line x1="-10.5" y1="798.48" x2="788.5" y2="798.48" stroke="#BFBFBF" stroke-width="1.04036"/>
+</g>
+<rect x="-9.97982" y="0.520182" width="797.96" height="797.96" stroke="#BFBFBF" stroke-width="1.04036"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1_16283" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(399.5 399.5) rotate(90) scale(399.5 399.5)">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1_16283">
+<rect width="799" height="799" fill="white" transform="translate(-10.5)"/>
+</clipPath>
+<clipPath id="clip1_1_16283">
+<rect x="-10.5" width="799" height="799" fill="white"/>
+</clipPath>
+<clipPath id="clip2_1_16283">
+<rect x="-10.5" width="799" height="799" fill="white"/>
+</clipPath>
+</defs>
+</svg>
