@@ -5,6 +5,7 @@ import CreateAccount from "../components/templates/create-account/CreateAccount"
 import CreateAccountForm from "../components/organisms/create-ccount-form/CreateAccountForm";
 import SignInForm from "../components/organisms/signin-form/SignInForm";
 import VerifyForm from "../components/organisms/verify-form/VerifyForm";
+import Onboarding from "../components/templates/onboarding/Onboarding";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +27,13 @@ const router = createBrowserRouter([
           },
         ],
       },
-
       {
         path: "account/verify",
         element: <VerifyForm />,
+      },
+      {
+        path: "onboarding",
+        element: <Onboarding />,
       },
     ],
   },

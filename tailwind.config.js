@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { blackA, violet,green,mauve } from "@radix-ui/colors";
+import { blackA, violet, green, mauve } from "@radix-ui/colors";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -10,6 +10,7 @@ export default {
         },
         secondary: {
           DEFAULT: "#F6CE31",
+          200: "#E7D698",
         },
         silver: {
           DEFAULT: "#F7F8FA",
