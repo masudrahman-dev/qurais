@@ -18,7 +18,7 @@ const Stepper: React.FC<StepperProps> = ({ current }) => {
             >
               <CheckSolidIcon />
               <p className="absolute  -top-3 left-10 text-3xl ">
-                ................
+                ..................
               </p>
             </div>
           );
@@ -32,7 +32,7 @@ const Stepper: React.FC<StepperProps> = ({ current }) => {
             >
               <CheckSolidIcon />
               <p className="absolute  -top-3 left-10 text-3xl ">
-                ................
+                ..................
               </p>
             </div>
           );

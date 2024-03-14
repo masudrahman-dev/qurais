@@ -18,12 +18,17 @@ const Onboarding = () => {
   const { handleIncrement, handleDecrement, current } = context;
   return (
     <div>
-      <div className="w-1/4 h-4 bg-secondary-200 absolute top-0    "></div>
+      <div
+        className={clx(`h-4 bg-secondary-200 absolute top-0 w-1/4 transition-all duration-500 ease-in-out`, {
+          "w-2/4": current === 2,
+          "w-3/4": current === 3,
+          "w-full": current === 4,
+        })}
+      ></div>
       <div className="grid grid-cols-2  ">
         <div
-          // bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-1.svg')]
           className={clx(
-            `flex justify-center border h-screen flex-col items-center bg-no-repeat bg-center`,
+            `flex justify-center  h-screen flex-col items-center bg-no-repeat bg-center`,
             {
               "bg-[url('/home/masud/moveOn/quarantine/qurais/src/assets/patterns/pattern-step-1.svg')]":
                 current === 1,
@@ -61,11 +66,10 @@ const Onboarding = () => {
           </div>
         </div>
         <div
-          className={` flex justify-center border h-screen flex-col items-center `}
+          className={` flex justify-center  h-screen flex-col items-center `}
         >
           <div className="w-[720px] rounded-2xl bg-white  p-base">
             <BackButton onClick={handleDecrement} />
-            {current}
             <div className="bg-primary flex items-center h-20 w-full mt-base ">
               <div className="flex gap-2 px-2 justify-between flex-1">
                 <Stepper current={current} />
