@@ -9,6 +9,7 @@ import * as Progress from "@radix-ui/react-progress";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import Step1 from "./steps/step1/Step1";
 import Step3 from "./steps/step3/Step3";
+import Step4 from "./steps/step4/Step4";
 
 const ProgressDemo = () => {
   const [progress, setProgress] = React.useState(10);
@@ -63,7 +64,8 @@ const Onboarding = () => {
 
             {/* <Step1 /> */}
             {/* <Step2 />  */}
-            <Step3 />
+            {/* <Step3 /> */}
+            <Step4 />
 
             <div className="h-[2px] rounded-full bg-gray-400 w-full mb-base mt-8"></div>
             <Button>Continue</Button>
