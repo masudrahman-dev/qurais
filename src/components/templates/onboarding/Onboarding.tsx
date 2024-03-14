@@ -19,13 +19,16 @@ const Onboarding = () => {
   return (
     <div>
       <div
-        className={clx(`h-4 bg-secondary-200 absolute top-0 w-1/4 transition-all duration-500 ease-in-out`, {
-          "w-2/4": current === 2,
-          "w-3/4": current === 3,
-          "w-full": current === 4,
-        })}
+        className={clx(
+          `h-4 bg-secondary-200 absolute top-0 w-1/4 transition-all duration-500 ease-in-out`,
+          {
+            "w-2/4": current === 2,
+            "w-3/4": current === 3,
+            "w-full": current === 4,
+          }
+        )}
       ></div>
-      <div className="grid grid-cols-2  ">
+      <div className="grid xl:grid-cols-2 grid-cols-1  ">
         <div
           className={clx(
             `flex justify-center  h-screen flex-col items-center bg-no-repeat bg-center`,
