@@ -1,10 +1,21 @@
-import React, { ReactNode, createContext, useContext } from "react";
-import { useForm, FormProvider, useFormContext } from "react-hook-form";
+import React, {
+  Dispatch,
+  ReactNode,
+  createContext,
+  useState,
+} from "react";
 
 interface OnboardingProviderProps {
   children: ReactNode;
 }
-interface OnboardingContextProps {}
+
+export interface OnboardingContextProps {
+  handleIncrement: () => void;
+  handleDecrement: () => void;
+  current: number;
+  setCurrent: Dispatch<number>;
+}
+
 export const OnboardingContext = createContext<OnboardingContextProps | null>(
   null
 );
@@ -12,8 +23,25 @@ export const OnboardingContext = createContext<OnboardingContextProps | null>(
 const OnboardingProvider: React.FC<OnboardingProviderProps> = ({
   children,
 }) => {
-  const value = {
-    test: " hello",
+  const [current, setCurrent] = useState<number>(1);
+
+  const handleIncrement = () => {
+    if (current < 4) {
+      setCurrent((c) => c + 1);
+    }
+  };
+
+  const handleDecrement = () => {
+    if (current > 1) {
+      setCurrent((c) => c - 1);
+    }
+  };
+
+  const value: OnboardingContextProps = {
+    handleIncrement,
+    handleDecrement,
+    current,
+    setCurrent,
   };
 
   return (
