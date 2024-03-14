@@ -1,42 +1,70 @@
 import React from "react";
 
-import * as Form from "@radix-ui/react-form";
+import * as RadioGroup from "@radix-ui/react-radio-group";
 
-const FormDemo = () => (
-  <Form.Root className="w-[260px]">
-    <Form.Field className="grid mb-[10px]" name="email">
-      <div className="flex items-baseline justify-between">
-        <Form.Label className="text-[15px] font-medium leading-[35px] text-white">
-          Email
-        </Form.Label>
-        <Form.Message
-          className="text-[13px] text-white opacity-[0.8]"
-          match="valueMissing"
+const RadioGroupDemo = () => (
+  <form>
+    <RadioGroup.Root
+      className="grid grid-cols-2  gap-base"
+      defaultValue="bestOption1"
+      aria-label="View density"
+    >
+      <div className="flex items-start">
+        <label
+          htmlFor="bestOption1"
+          className="block w-full text-start
+  "
         >
-          Please enter your email
-        </Form.Message>
-        <Form.Message
-          className="text-[13px] text-white opacity-[0.8]"
-          match="typeMismatch"
-        >
-          Please provide a valid email
-        </Form.Message>
+          <RadioGroup.Item
+            className="data-[state=checked]:bg-secondary text-start data-[state=unchecked]:border rounded-lg w-full py-base px-6   outline-none cursor-default"
+            value="bestOption1"
+            id="bestOption1"
+          >
+            <span className="text-nowrap ">
+              Yes, I’m ready to get a mortgage
+            </span>
+            <RadioGroup.Indicator />
+          </RadioGroup.Item>
+        </label>
       </div>
-      <Form.Control asChild>
-        <input
-          className="box-border w-full bg-blackA2 shadow-blackA6 inline-flex h-[35px] appearance-none items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none text-white shadow-[0_0_0_1px] outline-none hover:shadow-[0_0_0_1px_black] focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA6"
-          type="email"
-          required
-        />
-      </Form.Control>
-    </Form.Field>
 
-    <Form.Submit asChild>
-      <button className="box-border w-full text-violet11 shadow-blackA4 hover:bg-mauve3 inline-flex h-[35px] items-center justify-center rounded-[4px] bg-white px-[15px] font-medium leading-none shadow-[0_2px_10px] focus:shadow-[0_0_0_2px] focus:shadow-black focus:outline-none mt-[10px]">
-        Post question
-      </button>
-    </Form.Submit>
-  </Form.Root>
+      <div className="flex items-start">
+        <label
+          htmlFor="bestOption2"
+          className="block w-full text-start
+ "
+        >
+          <RadioGroup.Item
+            className="data-[state=checked]:bg-secondary text-start data-[state=unchecked]:border rounded-lg w-full py-base px-6   outline-none cursor-default"
+            value="bestOption2"
+            id="bestOption2"
+          >
+            <span className="text-nowrap ">No, Just started my research</span>
+            <RadioGroup.Indicator />
+          </RadioGroup.Item>
+        </label>
+      </div>
+
+      <div className="flex items-start">
+        <label
+          htmlFor="bestOption3"
+          className="block w-full text-start
+ "
+        >
+          <RadioGroup.Item
+            className="data-[state=checked]:bg-secondary data-[state=unchecked]:border rounded-lg w-full py-base px-6   outline-none cursor-default"
+            value="bestOption3"
+            id="bestOption3"
+          >
+            <span className="text-nowrap">
+              Not yet, I’m checking out my options
+            </span>
+            <RadioGroup.Indicator />
+          </RadioGroup.Item>
+        </label>
+      </div>
+    </RadioGroup.Root>
+  </form>
 );
 
 const Step1 = () => {
@@ -50,13 +78,12 @@ const Step1 = () => {
         basic info to get started
       </p>
 
-      <form>
-        <label htmlFor="price">
-          <p className="text-label  pb-base">
-            Select the option that best describes you
-          </p>
-        </label>
-      </form>
+      <div>
+        <p className="text-label  pb-base">
+          Select the option that best describes you
+        </p>
+        <RadioGroupDemo />
+      </div>
     </div>
   );
 };
